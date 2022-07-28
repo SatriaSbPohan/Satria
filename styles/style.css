@@ -33,14 +33,15 @@ body {
 }
 
 #logo {
+    /* border: blue 1px solid; */
     position: absolute;
-    top: 50%;
-    left: 10%;
+    top: 55%;
+    left: 15%;
     transform: translate(-50%, -50%);
-    font-family: Brush Script MT;
-    padding: 10px;
-    color: white;
-    font-size: 40px;
+}
+.logo {
+    width: 240px;
+    height: 60px;
 }
 
 .menu-box {
@@ -220,10 +221,13 @@ body {
     }
     #logo {
         width: max-content;
-        /* border: blue 1px solid; */
         top: 50%;
         left: 75%;
         transform: translate(-50%, -50%);
+    }
+    .logo {
+        width: 144px;
+        height: 36px;
     }
     .menu-box {
         display: block;
