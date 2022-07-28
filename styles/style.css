@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: black; */
 }
 
 body {
@@ -143,9 +144,9 @@ body {
 }
 
 .about-me {
-    /* border: 1px grey solid; */
-    width: 1000px;
-    padding: 60px;
+    border: 1px grey solid;
+    width: 80%;
+    padding: 50px;
     border-radius: 12px;
     height: fit-content;
     display: flex;
@@ -154,7 +155,9 @@ body {
 .about-text {
     color: white;
     margin: 25px;
+    margin-top: 20px;
     border-radius: 12px;
+    font-size: 15px;
     /* border: 1px solid black; */
 }
 
@@ -225,5 +228,14 @@ body {
     }
     .contents {
         display: block;
+    }
+    .profile {
+        width: 198px;
+        height: 264px;
+    }
+    .about-text {
+        font-size: 8px;
+        margin-top: -2px;
+
     }
 }
