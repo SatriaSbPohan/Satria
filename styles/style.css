@@ -11,8 +11,9 @@ body {
 
 .container {
     width: 100%;
-    height: 80vh;
-    /* border: blue 1px solid; */
+    /* height: 100vh; */
+    height: fit-content;
+    /* border: blue 3px solid; */
 }
 .header {
     position: relative;
@@ -85,7 +86,7 @@ body {
     width: fit-content;
     height: fit-content;
     display: flex;
-    /* border: white 1px solid; */
+    /* border: yellow 1px solid; */
 }
 .nama {
     margin-top: 130px;
@@ -138,17 +139,21 @@ body {
 
 .about {
     position: relative;
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     padding-top: 40px;
-    /* border: solid blue 1px; */
+    /* border: solid green 3px; */
 }
 
 .about-me {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    /* border: 1px grey solid; */
+    /* border: 10px red solid; */
     width: 80%;
-    padding: 50px;
+    padding: 10px;
     font-size: 15px;
     border-radius: 12px;
     height: fit-content;
@@ -182,7 +187,7 @@ body {
     content: "";
     position: absolute;
     top: 0%;
-    height: 102vh;
+    height: 100%;
     width: 100%;
     background-image: conic-gradient(at 50% 0%, rgb(66, 82, 80), rgb(66, 82, 80), rgb(160, 66, 66), rgb(160, 66, 66));
     z-index: -1;
@@ -191,13 +196,18 @@ body {
 /* footer */
 
 .footer {
-    height: 15vh;
-    padding-top: 50px;
+    position: relative;
+    height: 10vh;
+    /* padding-top: 10px; */
     width: 100%;
     background-color: grey;
 }
 
 .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     font-size: 20px;
     font-weight: 800;
@@ -205,6 +215,9 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+    .container {
+        height: 100vh;
+    }
     .header {
         height: 15%;
     }
@@ -251,19 +264,31 @@ body {
     }
     .profile {
         float: left;
-        width: 198px;
-        height: 264px;
+        width: 99px;
+        height: 132px;
     }
     .about {
-        height: fit-content;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* border: blue 3px solid; */
+        height: 85%;
     }
     .about-text {
         /* margin-top: 20px; */
 
     }
     .about-me {
+        /* border: 3px red solid; */
+        /* padding: 0px; */
         display: block;
         font-size: 8px;
-        border: none;
+        /* border: none; */
+    }
+    .footer {
+        padding-top: 15px;
+        height: 15%;
+    }
+    .info {
+        font-size: 10px;
     }
 }
