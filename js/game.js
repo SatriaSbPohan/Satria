@@ -1,10 +1,11 @@
-const satu = document.getElementsByClassName("satu")[0];
-const dua = document.getElementsByClassName("dua")[0];
-
+const satu = document.getElementsByClassName("nama-satu")[0].innerHTML;
+const dua = document.getElementsByClassName("nama-dua")[0];
+const hasil = document.getElementsByClassName("text-hasil")[0];
 const button = document.getElementsByClassName("button")[0];
 
 button.addEventListener("click", jodoh);
 
 function jodoh () {
-    satu.text
+    console.log(satu);    
+    hasil.innerHTML = satu;
 }

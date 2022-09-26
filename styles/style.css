@@ -79,15 +79,17 @@ body {
     position: relative;
     height: 80vh;
     width: 100%;
+    padding-top: 10vh;
 }
 
 .contents {
     margin: auto;
-    position: absolute;
+    position: relative;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: fit-content;
+    transform: translate(-50%, -50%); */
+    width: 150vh;
     height: fit-content;
     display: flex;
     /* border: yellow 1px solid; */
@@ -118,7 +120,7 @@ body {
     background-color: rgb(160, 66, 66) !important;
 }
 .fpic {
-    margin-left: 10px;
+    margin-left: 8vh;
     height: 470px;
     width: 550px;
     border-bottom: white 2px solid;
@@ -203,41 +205,99 @@ body {
     position: relative;
     width: 100%;
     height: 90vh;
+    padding-top: 2.5vh;
     /* padding: 10px; */
     background-image: linear-gradient(to left,rgb(160, 66, 66), rgb(66, 82, 80));
 }
 .galeri h1 {
+    margin-bottom: 5vh;
     color: white;
     font-size: 40px;
     text-align: center;
 }
 
+.foto1 {
+    grid-area: satu;
+    background-image: url("../images/1.jpeg");
+}
+.foto2 {
+    grid-area: dua;
+    background-image: url("../images/2.jpeg");
+}
+.foto3 {
+    grid-area: tiga;
+    background-image: url("../images/3.jpeg");
+}
+.foto4 {
+    grid-area: empat;
+    background-image: url("../images/4.jpeg");
+}
+.foto5 {
+    grid-area: lima;
+    background-image: url("../images/5.jpeg");
+}
+.foto6 {
+    grid-area: enam;
+    background-image: url("../images/6.jpeg");
+}
+.foto7 {
+    grid-area: tujuh;
+    background-image: url("../images/7.jpeg");
+}
+
 .box-galeri {
-    display: block;
-    width: fit-content;
-    border: 1px solid blue;
+    position: relative;
+    margin: auto;
+    height: 70vh;
+    width: 80%;
+    display: grid;
+    grid-template-areas: 
+    'satu satu dua tiga'
+    'empat lima lima tiga'
+    'empat enam tujuh tujuh';
+    gap: 4vh;
+    padding: 10px;
+    /* border: 1px solid white; */
+}
+.box-galeri div {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-.box-galeri img {
-    margin: 40px;
+    width: 100%;
+    height: 100%;
+    border: 1px white solid;
+    /* background-color: green; */
     border-radius: 12px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease;
 }
+.box-galeri div:hover {
+    width: 110%;
+    height: 110%;
+    border: 1px red solid;
+    z-index: 100;
+}
+.btn {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.next {
+    right: 1%;
+}
+.previous {
+    left: 5%;
+}
+/* .foto-galeri {
+    width: 10vh;
+    height: 10vh;
+} */
 
-.main-galeri {
-    /* margin: 40px; */
-    margin-top: 40px;
-    width: 500px;
-    height: 350px;
-}
-
-.foto-galeri {
-    margin-top: 50px;
-    width: 200px;
-    height: 150px;
-}
 /* .right {
     float: right;
 }
@@ -249,7 +309,7 @@ body {
 
 .footer {
     position: relative;
-    height: 10vh;
+    height: 7.5vh;
     /* padding-top: 10px; */
     width: 100%;
     background-color: grey;
@@ -349,6 +409,7 @@ body {
     .contents {
         top: 60%;
         display: block;
+        border: 1px red solid;
     }
     .profile {
         float: left;
