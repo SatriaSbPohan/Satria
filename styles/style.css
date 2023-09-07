@@ -137,12 +137,12 @@ body {
     height: 125%;
     width: 100%;
     transform: rotate(180deg);
-    /* background-image: conic-gradient(at 1% 0%, rgb(66, 82, 80), rgb(66, 82, 80), rgb(160, 66, 66), rgb(160, 66, 66)); */
-    animation: bgcg 30s infinite;
+    background-image: conic-gradient(at 50% 0%, rgb(66, 82, 80), rgb(66, 82, 80), rgb(160, 66, 66), rgb(160, 66, 66));
+    animation: bgcg 100s infinite;
     z-index: -1;
 }
 
-@keyframes bgcg {
+/* @keyframes bgcg {
     1% {background-image: conic-gradient(at 2% 0%, rgb(66, 82, 80), rgb(66, 82, 80), rgb(160, 66, 66), rgb(160, 66, 66));}
     2% {background-image: conic-gradient(at 4% 0%, rgb(66, 82, 80), rgb(66, 82, 80), rgb(160, 66, 66), rgb(160, 66, 66));}
     3% {background-image: conic-gradient(at 6% 0%, rgb(66, 82, 80), rgb(66, 82, 80), rgb(160, 66, 66), rgb(160, 66, 66));}
@@ -244,7 +244,7 @@ body {
     99% {background-image: conic-gradient(at 98% 0%, rgb(160, 66, 66), rgb(160, 66, 66), rgb(66, 82, 80), rgb(66, 82, 80));}
     100% {background-image: conic-gradient(at 100% 0%, rgb(160, 66, 66), rgb(160, 66, 66), rgb(66, 82, 80), rgb(66, 82, 80));}
     
-}
+} */
 
 /* about */
 
